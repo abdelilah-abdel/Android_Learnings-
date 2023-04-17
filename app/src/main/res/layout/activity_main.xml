@@ -46,7 +46,7 @@
     <EditText
         android:hint="aaa"
         android:id="@+id/txtPrenom"
-        android:layout_width="100dp"
+        android:layout_width="10dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/txtNom"
         app:layout_constraintStart_toEndOf="@+id/labelPrenom"
@@ -73,7 +73,7 @@
     <EditText
         android:hint="aaa"
         android:id="@+id/txtClasse"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/ImageProfile"
         app:layout_constraintStart_toEndOf="@+id/labelClasse"
@@ -89,13 +89,13 @@
         />
 
     <EditText
-        android:hint="aaa"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/labelReq"
-        app:layout_constraintBottom_toTopOf="@+id/btnsave"
         android:gravity="top"
-        />
+        android:hint="aaa"
+        app:layout_constraintBottom_toTopOf="@+id/btnsave"
+        app:layout_constraintTop_toBottomOf="@+id/labelReq" />
 
 
     <Button
@@ -106,4 +106,17 @@
         android:onClick="onClickHandler"
 
         tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:layout_width="@+id/listeNotes"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ImageProfile"
+        app:layout_constraintBaseline_toBottomOf="@id/txtClasse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
